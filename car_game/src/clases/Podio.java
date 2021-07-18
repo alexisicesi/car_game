@@ -6,6 +6,12 @@ public class Podio {
 	private Conductor plata;
 	private Conductor bronce;
 	
+	public Podio(Conductor oro, Conductor plata, Conductor bronce) {
+		this.oro = oro;
+		this.plata = plata;
+		this.bronce = bronce;
+	}
+	
 	public Conductor getOro() {
 		return oro;
 	}

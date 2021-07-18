@@ -24,6 +24,7 @@ import clases.Carro;
 import clases.Conductor;
 import clases.Juego;
 import clases.Pista;
+import clases.Podio;
 import hilos.HiloArranque;
 
 public class VentanaPrincipal extends JFrame implements ActionListener {
@@ -460,6 +461,10 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 					System.out.println("Oro: " + ganadores.get(0).getNombre());
 					System.out.println("Plata: " + ganadores.get(1).getNombre());
 					
+					Podio podio = new Podio(ganadores.get(0), ganadores.get(1), null);
+					
+					juego.setPodio(podio);
+					
 					guardarGanadoresEnPodio();
 				}
 			}
@@ -475,6 +480,10 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 					System.out.println("Oro: " + ganadores.get(0).getNombre());
 					System.out.println("Plata: " + ganadores.get(1).getNombre());
 					System.out.println("Bronce: " + ganadores.get(2).getNombre());
+					
+					Podio podio = new Podio(ganadores.get(0), ganadores.get(1), ganadores.get(2));
+					
+					juego.setPodio(podio);
 					
 					guardarGanadoresEnPodio();
 				}
