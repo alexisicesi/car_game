@@ -1,0 +1,3 @@
+Jannis	oro	1
+Valeria	plata	1
+Beycker	bronce	1
