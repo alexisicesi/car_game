@@ -34,11 +34,11 @@ public class Pista {
 	
 	public int validarPista(int numeroPista) {
 		if(numeroPista == 1) {
-			return 20;
-		}else if(numeroPista == 2) {
 			return 30;
+		}else if(numeroPista == 2) {
+			return 60;
 		}else if(numeroPista == 3) {
-			return 200;
+			return 120;
 		}else {
 			return 0;
 		}

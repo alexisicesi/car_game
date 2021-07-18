@@ -124,7 +124,7 @@ public class VentanaPrincipal extends JFrame implements ActionListener {
 		arraylistCarritos.clear();
 		repaint();
 		
-		int pistaSeleccionada = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de la pista:\n 1 - pista 20 Km\n 2 - pista 30 Km\n 3 - pista 50 Km", null));
+		int pistaSeleccionada = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número de la pista:\n 1 - pista 30 Km\n 2 - pista 60 Km\n 3 - pista 120 Km", null));
 		
 		while(pistaSeleccionada != 1 && pistaSeleccionada != 2 && pistaSeleccionada != 3) {
 			JOptionPane.showMessageDialog(null, "Valor incorrecto. Opciones validas: 1, 2 o 3");
